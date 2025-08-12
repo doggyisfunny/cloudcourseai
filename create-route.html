@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Route</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="avatar"></div>
+    <a href="index.html"><button title="Dashboard"><svg viewBox="0 0 24 24"><path d="M3 9.5l9-7 9 7v11a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1v-11z"/></svg></button></a>
+    <a href="flight-home.html"><button title="Flights"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></a>
+    <a href="create-route.html"><button title="Create Route"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></a>
+    <a href="settings.html"><button title="Settings"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7v1H4a4 4 0 0 0 0 8h14a4 4 0 0 0 0-8h-1V9a7 7 0 0 0-7-7z"/></svg></button></a>
+    <a href="account.html"><button title="Account"><svg viewBox="0 0 24 24"><path d="M4 12h16M4 6h16M4 18h16"/></svg></button></a>
+  </nav>
+
+  <main class="main">
+    <h1>Create / Update Route</h1>
+
+    <form class="form-container" action="#" onsubmit="alert('Demo: form submit prevented'); return false;">
+      <label>Route Name<input type="text" placeholder="e.g. MEL→SYD" /></label>
+      <label>Departure airport<input type="text" placeholder="ICAO/IATA or name" /></label>
+      <label>Destination airport<input type="text" placeholder="ICAO/IATA or name" /></label>
+      <label>Planned departure<input type="datetime-local" /></label>
+      <label>Aircraft<select><option>Phenom 100</option><option>N888LJ</option></select></label>
+      <label>Cruise altitude<input type="text" placeholder="e.g. FL320" /></label>
+      <label>Notes<textarea style="background:#3b3b3b;color:#fff;padding:8px;border-radius:4px;border:none;height:80px"></textarea></label>
+
+      <div style="display:flex;gap:8px;">
+        <button type="submit">Save Route</button>
+        <button type="button" style="background:#ff7043" onclick="alert('Demo: deleted');">Delete</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

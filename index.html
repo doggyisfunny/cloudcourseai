@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flight Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="avatar"></div>
+    <a href="index.html" title="Dashboard"><button><svg viewBox="0 0 24 24"><path d="M3 9.5l9-7 9 7v11a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1v-11z"/></svg></button></a>
+    <a href="flight-home.html" title="Flights"><button><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></a>
+    <a href="create-route.html" title="Create Route"><button><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></a>
+    <a href="settings.html" title="Settings"><button><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7v1H4a4 4 0 0 0 0 8h14a4 4 0 0 0 0-8h-1V9a7 7 0 0 0-7-7z"/></svg></button></a>
+    <a href="account.html" title="Account"><button><svg viewBox="0 0 24 24"><path d="M4 12h16M4 6h16M4 18h16"/></svg></button></a>
+  </nav>
+
+  <main class="main">
+    <h1>Dashboard</h1>
+
+    <section class="weather" aria-label="weather summary">
+      <div class="box placeholder"></div>
+      <div class="box placeholder"></div>
+      <div class="box placeholder"></div>
+      <div class="box placeholder"></div>
+      <div class="box placeholder"></div>
+    </section>
+
+    <section class="aircraft" aria-label="aircraft status">
+      <div class="aircraft-card">
+        <div class="status"><div class="dot active"></div>Active</div>
+        <div class="img-placeholder placeholder"></div>
+        <h3>Phenom 100</h3>
+      </div>
+      <div class="aircraft-card">
+        <div class="status"><div class="dot landed"></div>Landed</div>
+        <div class="img-placeholder placeholder"></div>
+        <h3>N888LJ</h3>
+      </div>
+      <div class="aircraft-card">
+        <div class="status"><div class="dot departing"></div>Departing</div>
+        <div class="img-placeholder placeholder"></div>
+        <h3>Another Jet</h3>
+      </div>
+    </section>
+
+    <section class="routes" aria-label="routes">
+      <div class="route-card">
+        <div class="map-placeholder placeholder"></div>
+        <div class="route-info">
+          <h4>Route 1</h4>
+          <p>Melbourne (MEL) → Sydney (SYD)<br>1h 31m</p>
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="map-placeholder placeholder"></div>
+        <div class="route-info">
+          <h4>Route 2</h4>
+          <p>Athens (ATH) → Thessaloniki (SKG)<br>50m</p>
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="map-placeholder placeholder"></div>
+        <div class="route-info">
+          <h4>Route 3</h4>
+          <p>Key West → Kingston<br>1h 15m</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
